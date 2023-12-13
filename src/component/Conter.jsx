@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { increase,decrease,reset } from '../redux/actions/CounterActions'
 const Conter = () => {
-    const t=useSelector(state=>state.count)
+    const t=useSelector(state=>state.counter.count)
     console.log(t,"useselection")
     const dispatch= useDispatch()
   return (
